@@ -1,0 +1,27 @@
+{
+  "name": "authentication",
+  "version": "1.0.0",
+  "description": "user authentication",
+  "main": "index.js",
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devstart": "NODE_ENV=production node index.js",
+    "start": "npm run build && node dist/index.js",
+    "dev": "nodemon index.js",
+    "build": "babel index.js -d dist"
+  },
+  "author": "olorunwa lawrence",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.18.13",
+    "@babel/preset-env": "^7.18.10",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.19"
+  }
+}
